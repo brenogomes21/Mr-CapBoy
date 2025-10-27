@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 3</name>
+    <events>
+        <variable comment="Vida do boneco" constant="0" name="VAR_LIFES3" sid="813994065616454" static="0" type="number">5</variable>
+        <comment></comment>
+        <event-group description="" sid="971376103447939" title="SYSTEM3">
+            <sub-events>
+                <event-block sid="165765711256668">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="908047655685804" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="895993133746555" type="MUSICAMENU">
+                            <param id="0" name="Audio file">otorhead  Ace Of  (Instrumental)</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">20</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Atualiza as vidas</comment>
+                <event-block sid="917113782113912">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="805926335482599" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="205908149594896" type="txt_vida">
+                            <param id="0" name="Text">&quot;HP : &quot; &amp; VAR_LIFES</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>SE O BONECO MORRER VOLTA A POSIÇAO ORIGINAL E RESETA A VIDA</comment>
+                <event-block sid="923049340440331">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="384229801455429" type="System">
+                            <param id="0" name="Variable">VAR_LIFES</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="923654277832962" type="BONECO">
+                            <param id="0" name="X">96</param>
+                            <param id="1" name="Y">7744</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="630073576036608" type="System">
+                            <param id="0" name="Variable">VAR_LIFES</param>
+                            <param id="1" name="Value">5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="775602024937312">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="966480446435352" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="824577853563266" type="System">
+                            <param id="0" name="Variable">VAR_LIFES</param>
+                            <param id="1" name="Value">5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="163813044723844">
+                    <conditions>
+                        <condition id="-3" name="On end of layout" sid="674685372184933" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="621805550382093" type="MUSICAMENU" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="457300176398658" title="MOVIMENTAÇAO DO PERSONAGEM3">
+            <sub-events>
+                <event-block sid="360386827819974">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="456127770598697" type="Keyboard">
+                            <param id="0" name="Key">68 (D)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="705571243150716" type="BONECO">
+                            <param id="0" name="Animation">&quot;ID_WALK&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="475222596019079" type="BONECO">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="351210421022421" type="BONECO">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="723493523672430">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="896703646252612" type="Keyboard">
+                            <param id="0" name="Key">65 (A)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="506724525269536" type="BONECO">
+                            <param id="0" name="Animation">&quot;ID_WALK&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="919799656610849" type="BONECO">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="566291466861743" type="BONECO">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="134712710500959">
+                    <conditions>
+                        <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="274574652125302" type="BONECO" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="723726158011429" type="BONECO">
+                            <param id="0" name="Animation">&quot;ID_IDLE&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="531570910392304">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="945801613600668" type="Keyboard">
+                            <param id="0" name="Key">87 (W)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="782208335282723" type="BONECO">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="954347446355045" type="BONECO">
+                            <param id="0" name="Animation">&quot;ID_JUMP&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <comment>QUANDO O BONECO CAI</comment>
+        <event-block sid="240989029267380">
+            <conditions>
+                <condition id="-2" name="Compare Y" sid="623422276472872" type="BONECO">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Y co-ordinate">LayoutHeight</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="293198138625275" type="BONECO">
+                    <param id="0" name="X">96</param>
+                    <param id="1" name="Y">7744</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="411743972042917" type="System">
+                    <param id="0" name="Variable">VAR_LIFES</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>PASSA DE FASE</comment>
+        <event-block sid="420154064048153">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="984334975857166" type="PASSARFASE">
+                    <param id="0" name="Object">BONECO</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-43" name="Go to next/previous layout" sid="157770644497861" type="System">
+                    <param id="0" name="Which">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

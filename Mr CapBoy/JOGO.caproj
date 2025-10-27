@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>JOGO</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>ipn7zmk8rk9x</unique-id>
+    <saved-with-version>23900</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1280</width>
+        <height>720</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="CHAO" sid="173135341741915">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="599980288848493">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="TiledBackground" sid="493015493481229">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="492617407413891">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="457151952886751">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="BONECO" sid="462806625646379">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="271053395411709">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="917573487483046">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="ID_IDLE" pingpong="0" repeatcount="1" repeatto="0" sid="101923699693752" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Breno Gomes\Desktop\JOGO\frame3.png">
+                        <collision-poly>
+                            <point x="0.0166667" y="0.128571" />
+                            <point x="0.152777" y="0" />
+                            <point x="0.694444" y="0.0142857" />
+                            <point x="1" y="0.378571" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="4" loop="1" name="ID_WALK" pingpong="0" repeatcount="1" repeatto="0" sid="172626836275644" speed="11">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Breno Gomes\Desktop\JOGO\frame1.png">
+                        <collision-poly>
+                            <point x="0.0166667" y="0.128571" />
+                            <point x="0.152777" y="0" />
+                            <point x="0.694444" y="0.0142857" />
+                            <point x="1" y="0.378571" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.0166667" y="0.128571" />
+                            <point x="0.152777" y="0" />
+                            <point x="0.694444" y="0.0142857" />
+                            <point x="1" y="0.378571" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.0166667" y="0.128571" />
+                            <point x="0.152777" y="0" />
+                            <point x="0.694444" y="0.0142857" />
+                            <point x="1" y="0.378571" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.0166667" y="0.128571" />
+                            <point x="0.152777" y="0" />
+                            <point x="0.694444" y="0.0142857" />
+                            <point x="1" y="0.378571" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="518552191430182">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="PASSARFASE" sid="158994026575625">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="149739877554151" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MENU" sid="995538981310847">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="972488200912552" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Breno Gomes\Desktop\JOGO\MENUBETA.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ENTRADA" sid="187766389094752">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="699680073594268">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="309140871726991" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Breno Gomes\Desktop\JOGO\Plain-Black-Wallpaper.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MUSICAMENU" sid="785526947282339">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="txt_vida" sid="758578493341410">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TEXTURACHAO" sid="849492713899582">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Breno Gomes\Desktop\JOGO\TEXTURA\PNG\Tiles\WaveForest_Square.png" />
+        </object-type>
+        <object-type name="TEXTURABAIXOCHAO" sid="739695954082174">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Breno Gomes\Desktop\JOGO\TEXTURA\PNG\Tiles\WaveForest_MudSquare.png" />
+        </object-type>
+        <object-type name="CHAOBORDA" sid="288643962451717">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Breno Gomes\Desktop\JOGO\TEXTURA\PNG\Tiles\WaveForest_UpRoundRight.png" />
+        </object-type>
+        <object-type name="TiledBackground2" sid="279770252851952">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Breno Gomes\Desktop\JOGO\TEXTURA\PNG\Tiles\WaveForest_UpRoundLeft.png" />
+        </object-type>
+        <object-type name="AGUA" sid="628021220514687">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\Faculdade\JOGO\TEXXTURA2\Tiles\liquidWater.png" />
+        </object-type>
+        <object-type name="AGUAA" sid="756009849255979">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\Faculdade\JOGO\TEXXTURA2\Tiles\liquidWaterTop.png" />
+        </object-type>
+        <object-type name="TROLL" sid="117237758274701">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="772415081561563" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="173777709863481">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="592891205420277" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ENTRADA2" sid="515680633327094">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="763868864571527" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Faculdade\JOGO\CREDITO.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TextBox" sid="413937282577519">
+            <plugin id="TextBox" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>MENU.xml</layout>
+        <layout>FASE1.xml</layout>
+        <layout>FASE2.xml</layout>
+        <layout>FASE3.xml</layout>
+        <layout>FASE4.xml</layout>
+        <layout>Creditos.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Event sheet 0.xml</event-sheet>
+        <event-sheet>Event sheet 2.xml</event-sheet>
+        <event-sheet>Event sheet 3.xml</event-sheet>
+        <event-sheet>Event sheet 4.xml</event-sheet>
+        <event-sheet>CREDITOS.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="5" />
+        <global-instance type="MUSICAMENU" uid="23">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder />
+    <music-folder>
+        <file name="Slipknot - Psychosocial (Instrumental version) (online-audio-converter.com).ogg" />
+        <file name="Avenged Sevenfold - Unholy Confessions [Instrumental] (online-audio-converter.com).ogg" />
+        <file name="Megadeth - Symphony Of Destruction (Instrumental)-[AudioTrimmer.com].ogg" />
+        <file name="otorhead  Ace Of  (Instrumental).ogg" />
+        <file name="Foo Fighters - Run (Instrumental cover with lyrics) (online-audio-converter.com).ogg" />
+    </music-folder>
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
